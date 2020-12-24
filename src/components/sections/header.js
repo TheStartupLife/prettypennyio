@@ -38,11 +38,6 @@ const Header = () => {
               get early access.
             </h2>
             <HeaderForm name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-            <p hidden>
-              <label>
-                Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-              </label>
-            </p>
               <HeaderInput placeholder="Your email"
               name="consumer-emails" value="contact" onChange={handleChange} />
               <HeaderButton type="submit">Early access</HeaderButton>
