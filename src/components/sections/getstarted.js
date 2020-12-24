@@ -9,10 +9,23 @@ const GetStarted = () => (
       <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
     </GetStartedContainer>
     <Container>
-    <HeaderForm onSubmit={handleSubmit}>
-        <HeaderInput placeholder="Your email" />
-        <TryItButton>Get Early access</TryItButton>
-    </HeaderForm>
+      <HeaderForm
+        name="early-access"
+        method="post"
+        data-netlify-honeypot="bot-field"
+        data-netlify="true"
+        >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="early-access" />
+        <HeaderInput
+        type="email"
+        placeholder="Your email"
+        name="email"
+        id="email"
+        required
+        />
+        <TryItButton>Early access</TryItButton>
+      </HeaderForm>
     </Container>
   </StyledSection>
 )
