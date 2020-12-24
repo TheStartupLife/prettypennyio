@@ -38,7 +38,6 @@ const Header = () => {
               get early access.
             </h2>
             <HeaderForm onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input name="form-name" value="contact" />
             <p hidden>
               <label>
                 Don’t fill this out: <input name="bot-field" onChange={handleChange} />
