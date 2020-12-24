@@ -44,7 +44,7 @@ const Header = () => {
               </label>
             </p>
               <HeaderInput placeholder="Your email"
-              name="consumer-emails" value="contact" />
+              name="consumer-emails" value="contact" onChange={handleChange} />
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
