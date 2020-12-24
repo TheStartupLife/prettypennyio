@@ -37,10 +37,15 @@ const Header = () => {
               We're building a next generation personal finance tool. Sign up to
               get early access.
             </h2>
-            <HeaderForm onSubmit={handleSubmit} method="POST" data-netlify="true" >
+            <HeaderForm onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+              </label>
+            </p>
               <HeaderInput placeholder="Your email"
-              type="email"
-              name="email" />
+              type="hidden" name="consumer-emails" value="contact" />
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
