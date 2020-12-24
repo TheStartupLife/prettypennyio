@@ -37,8 +37,10 @@ const Header = () => {
               We're building a next generation personal finance tool. Sign up to
               get early access.
             </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
+            <HeaderForm onSubmit={handleSubmit} netlify>
+              <HeaderInput placeholder="Your email"
+              type="email"
+              name="email" />
               <HeaderButton>Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
