@@ -41,7 +41,7 @@ const Header = () => {
               <HeaderInput placeholder="Your email"
               type="email"
               name="email" />
-              <HeaderButton>Early access</HeaderButton>
+              <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
           <ImageWrapper>
