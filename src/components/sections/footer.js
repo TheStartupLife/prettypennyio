@@ -28,7 +28,7 @@ const Footer = () => (
       <FooterColumn>
         <span>Social</span>
         <ul>
-          <a href="https://facebook.com/prettypenny"><li>Facebook</li></a>
+          <a href="https://facebook.com/prettypennyio"><li>Facebook</li></a>
           <a href="https://instagram.com/prettypenny.io"><li>Instagram</li></a>
         </ul>
       </FooterColumn>

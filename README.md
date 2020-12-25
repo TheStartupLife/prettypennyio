@@ -99,3 +99,4 @@ In `header.js` replacing the existing `<HeaderForm>...</HeaderForm>` components 
   <HeaderButton>Early access</HeaderButton>
 </HeaderForm>
 ```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/322b9f41-6d47-4d62-85a3-76e514c76faf/deploy-status)](https://app.netlify.com/sites/infallible-dubinsky-b7e8db/deploys)
