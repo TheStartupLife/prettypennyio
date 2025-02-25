@@ -10,11 +10,12 @@ const Header = () => {
     query {
       file(relativePath: { eq: "product/green-skew.png" }) {
         childImageSharp {
-          gatsbyImageData(width: 1000, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          gatsbyImageData(width: 1000, placeholder: TRACED_SVG, layout: CONSTRAINED)
         }
       }
     }
-  `)
+  `);
+  
 
   const image = getImage(data.file.childImageSharp)
 
