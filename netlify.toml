@@ -1,0 +1,11 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

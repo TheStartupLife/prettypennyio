@@ -19,10 +19,6 @@ const Header = () => {
 
   const image = getImage(data.file.childImageSharp)
 
-  const handleSubmit = event => {
-    event.preventDefault()
-    console.log("Form submitted!") // Optional: Add a console log for debugging
-  }
 
   return (
     <HeaderWrapper id="top">
@@ -44,7 +40,6 @@ const Header = () => {
               method="post"
               data-netlify-honeypot="bot-field"
               data-netlify="true"
-              onSubmit={handleSubmit}
             >
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="early-access" />
@@ -55,6 +50,9 @@ const Header = () => {
                 id="email"
                 required
               />
+                {/* Hidden redirect field (placed INSIDE the form) */}
+              <input type="hidden" name="redirect" value="/thank-you" />
+               {/* Submit button */}
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>
