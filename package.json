@@ -27,10 +27,12 @@
     "react-helmet": "^6.1.0",
     "react-scrollspy": "^3.4.3",
     "schema-utils": "^4.3.0",
+    "sharp": "^0.33.5",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript": "^5.7.3"
   },
   "keywords": [
     "gatsby"
