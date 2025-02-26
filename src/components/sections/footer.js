@@ -91,6 +91,10 @@ const FooterColumn = styled.div`
     margin: 16px 0;
     padding: 0;
     color: ${props => props.theme.color.black.regular};
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
     li {
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
