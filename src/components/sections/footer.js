@@ -7,15 +7,9 @@ const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
-        <span>Brands</span>
+        <span>Brands/Retailers</span>
         <ul>
-          <a href="https://partner.prettypenny.io"><li>Services</li></a>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Retailers</span>
-        <ul>
-          <a href="https://partner.prettypenny.io"><li>Services</li></a>
+          <a Target="_blank" href="https://partner.prettypenny.io"><li>Services</li></a>
         </ul>
       </FooterColumn>
       {/* <FooterColumn>
@@ -28,8 +22,9 @@ const Footer = () => (
       <FooterColumn>
         <span>Social</span>
         <ul>
-          <a href="https://facebook.com/prettypennyio"><li>Facebook</li></a>
-          <a href="https://instagram.com/prettypenny.io"><li>Instagram</li></a>
+          <a Target="_blank" href="https://facebook.com/prettypennyio"><li>Facebook</li></a>
+          <a Target="_blank" href="https://instagram.com/prettypenny.io"><li>Instagram</li></a>
+          <a Target="_blank" href="https://TikTok.com/@prettypenny.io"><li>TikTok</li></a>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
