@@ -23,6 +23,9 @@ const Contact = ({siteKey}) => {
     e.preventDefault();
     setStatus("Sending...");
 
+    console.log("Form Submitted!"); // ✅ Debugging
+    console.log("Recaptcha Token:", recaptchaToken); // ✅ Debugging
+
     if (!recaptchaToken) {
       setStatus("Please complete the reCAPTCHA verification.");
       return;
@@ -36,6 +39,7 @@ const Contact = ({siteKey}) => {
 
     if (response.ok) {
       setStatus("Message sent successfully!");
+      setIsSubmitted(true); // ✅ Show confirmation message
       setFormData({ name: "", email: "", message: "" });
       setRecaptchaToken(""); // Reset reCAPTCHA
     } else {
@@ -47,7 +51,9 @@ const Contact = ({siteKey}) => {
     <ContactSection>
       <h2>Contact Us</h2>
       <p>Have a question or inquiry? Reach out to us below.</p>
-
+      {isSubmitted ? (
+        <SuccessMessage>🎉 Thank you! Your message has been sent.</SuccessMessage>
+      ) : (
       <ContactForm onSubmit={handleSubmit}>
         <Label>
           Name
@@ -72,7 +78,8 @@ const Contact = ({siteKey}) => {
 
         <Button type="submit">Send Message</Button>
       </ContactForm>
-
+      )}
+      
       {status && <StatusMessage>{status}</StatusMessage>}
 
       <p>Or email us directly at <a href="mailto:team@prettypenny.io">team@prettypenny.io</a></p>
