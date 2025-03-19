@@ -12,13 +12,14 @@ const Footer = () => (
           <a Target="_blank" href="https://partner.prettypenny.io"><li>Services</li></a>
         </ul>
       </FooterColumn>
-      {/* <FooterColumn>
+      <FooterColumn>
         <span>Company</span>
         <ul>
-          <li>About Us</li>
-          <li>Careers</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact-us">Contact Us</a></li>
         </ul>
-      </FooterColumn> */}
+      </FooterColumn>
       <FooterColumn>
         <span>Social</span>
         <ul>
