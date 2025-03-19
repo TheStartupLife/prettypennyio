@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Contact = ({siteKey}) => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState("");
+  const [status, setStatus, setIsSubmitted] = useState("");
   const [recaptchaToken, setRecaptchaToken] = useState("");
 
     // Load siteKey from environment variable
@@ -51,7 +51,7 @@ const Contact = ({siteKey}) => {
     <ContactSection>
       <h2>Contact Us</h2>
       <p>Have a question or inquiry? Reach out to us below.</p>
-      {isSubmitted ? (
+      {setIsSubmitted ? (
         <SuccessMessage>🎉 Thank you! Your message has been sent.</SuccessMessage>
       ) : (
       <ContactForm onSubmit={handleSubmit}>
@@ -79,7 +79,7 @@ const Contact = ({siteKey}) => {
         <Button type="submit">Send Message</Button>
       </ContactForm>
       )}
-      
+
       {status && <StatusMessage>{status}</StatusMessage>}
 
       <p>Or email us directly at <a href="mailto:team@prettypenny.io">team@prettypenny.io</a></p>
@@ -134,4 +134,10 @@ const Button = styled.button`
 const StatusMessage = styled.p`
   margin-top: 10px;
   font-weight: bold;
+`;
+const SuccessMessage = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
 `;
