@@ -77,4 +77,5 @@ const AboutImage = styled(GatsbyImage)`
   object-fit: cover;
   margin: 0 auto; /* Centers the image */
   display: block; /* Ensures it aligns properly */
+  place-items: center; /* Centers the image */
 `
