@@ -97,57 +97,6 @@ const Flex = styled.div`
   }
 `
 
-const HeaderForm = styled.form`
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 16px;
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    flex-direction: column;
-  }
-`
-
-const HeaderInput = styled.input`
-  font-weight: 500;
-  font-size: 16px;
-  color: ${props => props.theme.color.primary};
-  line-height: 42px;
-  width: 100%;
-  text-align: left;
-  height: 60px;
-  border: 1px solid ${props => props.theme.color.secondary};
-  border-radius: 4px;
-  padding: 8px 16px;
-  outline: none;
-
-  &:focus {
-    box-shadow: inset ${props => props.theme.color.secondary} 0px 0px 0px 2px;
-  }
-`
-
-const HeaderButton = styled.button`
-  font-weight: 500;
-  font-size: 14px;
-  color: white;
-  height: 60px;
-  margin-left: 8px;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: ${props => props.theme.color.secondary};
-  border-radius: 4px;
-  padding: 0px 40px;
-  border: none;
-  outline: none;
-
-  &:hover {
-    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-  }
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-left: 0;
-  }
-`
-
 const ImageWrapper = styled.div`
   justify-self: end;
   align-self: center;
