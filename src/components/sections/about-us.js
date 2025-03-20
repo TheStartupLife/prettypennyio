@@ -26,17 +26,16 @@ const About = () => {
       <Subtitle>Founder</Subtitle>
       <SectionTitle>Whitney Lubin</SectionTitle>
       <AboutImage image={image} alt="Whitney Lubin avatar" />
-      <FeaturesGrid>
-        <AboutText>
-        </AboutText>
-      </FeaturesGrid>
     </StyledContainer>
   </Section>
 )
 }
 export default About
 
-const StyledContainer = styled(Container)``
+const StyledContainer = styled(Container)`
+  display: block;
+  place-items: center;
+`
 
 const SectionTitle = styled.h3`
   color: ${props => props.theme.color.primary};
@@ -51,22 +50,6 @@ const Subtitle = styled.h5`
   color: ${props => props.theme.color.accent};
   letter-spacing: 0px;
   margin-bottom: 12px;
-  text-align: center;
-`
-
-const FeaturesGrid = styled.div`
-  max-width: 670px;
-  grid-template-columns: 1fr 1fr;
-  margin: 0px auto;
-  grid-column-gap: 40px;
-  grid-row-gap: 35px;
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 1fr;
-    padding: 0 64px;
-  }
-`
-
-const AboutText = styled.p`
   text-align: center;
 `
 
