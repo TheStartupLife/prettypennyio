@@ -15,7 +15,7 @@ const Header = () => {
       }
     }
   `);
-  
+
 
   const image = getImage(data.file.childImageSharp)
 
@@ -27,13 +27,10 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>Spend, Save, Invest</Subtitle>
             <h1>
-              Every Beauty,
-              <br />
-              needs more funds
+              The Financial Power of Your Routine
             </h1>
             <p>
-              We're building a next-generation personal finance tool. Sign up to
-              get early access.
+              We help you build wealth through the beauty and wellness brands you love. Finally, spending that serves your bottom line.
             </p>
             <HeaderForm
               name="early-access"
@@ -50,9 +47,9 @@ const Header = () => {
                 id="email"
                 required
               />
-                {/* Hidden redirect field (placed INSIDE the form) */}
+              {/* Hidden redirect field (placed INSIDE the form) */}
               <input type="hidden" name="redirect" value="/thank-you" />
-               {/* Submit button */}
+              {/* Submit button */}
               <HeaderButton type="submit">Early access</HeaderButton>
             </HeaderForm>
           </HeaderTextGroup>

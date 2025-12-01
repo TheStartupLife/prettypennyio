@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
@@ -7,6 +8,7 @@ import { Container } from "../../global"
 import {
   Nav,
   Brand,
+  BrandLink,
   StyledContainer,
   NavListWrapper,
   MobileMenu,
@@ -73,11 +75,9 @@ export default class Navigation extends Component {
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
           <Brand>
-            <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                PrettyPenny.io
-              </AnchorLink>
-            </Scrollspy>
+            <BrandLink as={Link} to="/" onClick={this.closeMobileMenu}>
+              PrettyPenny.io
+            </BrandLink>
           </Brand>
           <Mobile>
             <button

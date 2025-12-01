@@ -27,8 +27,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-      mobile &&
-      `
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 
@@ -81,6 +81,19 @@ export const Brand = styled.div`
       color: ${props => props.theme.color.black.regular};
       text-decoration: none;
     }
+  }
+`
+
+export const BrandLink = styled.a`
+  font-family: ${props => props.theme.font.extrabold};
+  font-size: 1.375rem;
+  color: ${props => props.theme.color.ppDeep};
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: ${props => props.theme.color.ppPrimary};
   }
 `
 export const ActionsContainer = styled.div`
